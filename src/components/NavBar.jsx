@@ -17,7 +17,7 @@ const NavBar = () => {
   }, []);
 
   function handleLogout(e) {
-    fetch("http://localhost:4000", {
+    fetch("http://localhost:4000/logout", {
       credentials: "include",
       method: "POST",
     });
@@ -45,7 +45,7 @@ const NavBar = () => {
         {!username && (
           <>
             <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>{" "}
+            <Link to="/register">Register</Link>
           </>
         )}
       </nav>

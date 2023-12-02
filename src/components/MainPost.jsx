@@ -1,26 +1,26 @@
 import React from "react";
 import "../styles/MainPost.css";
+// The library used to format the date
+// import { formatISO9075 } from "date-fns";
+// <time>{formatISO9075(new Date(createdAt))}</time>
 
-const MainPost = () => {
+const MainPost = ({ title, summary, fileCover, content, createdAt, author }) => {
   return (
     <div className="entry">
       <div className="post">
         <div className="image">
           <img
-            src="https://techcrunch.com/wp-content/uploads/2023/03/GettyImages-1232166951-e1678278081143.jpg?w=1390&crop=1"
+            src={"http://localhost:4000/" + fileCover}
             alt=""
           />
         </div>
         <div className="text">
-          <h2>Full-house battery backup coming later this year</h2>
+          <h2>{title}</h2>
           <p className="info">
-            <a className="author">David Olowomeye</a>
-            <time>07-09-2023 2:40</time>
+            <a className="author">{author && author.username}</a>
+            <time>{createdAt}</time>
           </p>
-          <p className="summary">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            officiis velit corporis tempore sint voluptatem!
-          </p>
+          <p className="summary">{summary}</p>
         </div>
       </div>
     </div>

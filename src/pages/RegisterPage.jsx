@@ -4,6 +4,7 @@ import "../styles/LoginPage.css";
 const RegisterPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  
 
   async function submitRegister(e) {
     e.preventDefault();
@@ -18,6 +19,7 @@ const RegisterPage = () => {
 
     if (response.status === 200) {
       alert("Registration Successful!");
+
     } else {
       alert("Registration Failed");
     }
