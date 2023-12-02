@@ -1,0 +1,39 @@
+div.single-post-page div.image{
+    max-height: 200px;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+div.single-post-page div.image img {
+    object-fit: contain;
+    object-position: center center;   
+    width: 100%;
+}
+
+div.single-post-page a {
+    color: #333;
+    text-decoration: underline;
+}
+
+div.single-post-page h1 {
+    text-align: center;
+    margin-top: 10px 0 5px;
+}
+
+div.single-post-page time {
+    text-align: center;
+    display: block;
+    color: grey;
+    font-size: 0.7rem;
+}
+
+div.single-post-page .author {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+div.single-post-page div.content p {
+    line-height: 1.4rem;
+}
