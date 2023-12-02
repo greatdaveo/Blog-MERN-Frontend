@@ -36,6 +36,9 @@ const NavBar = () => {
       <nav>
         {username && (
           <>
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              Hello👋 {username}
+            </span>
             <Link to="/create">Create new post</Link>
             <a href="" onClick={handleLogout}>
               Logout

@@ -37,3 +37,24 @@ div.single-post-page .author {
 div.single-post-page div.content p {
     line-height: 1.4rem;
 }
+
+div.single-post-page div.edit-row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.single-post-page a.edit-btn {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+div.single-post-page a svg {
+    height: 18px;
+
+}
